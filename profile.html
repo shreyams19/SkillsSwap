@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSwap | My Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <a class="logo" href="index.html">
+        <span class="logo-mark">↔</span> SkillSwap
+    </a>
+
+    <button class="hamburger" onclick="toggleNav()">☰</button>
+
+    <nav id="nav">
+        <a href="index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="offer.html">Offer a Skill</a>
+        <a href="matches.html">Matches</a>
+        <a class="active" href="profile.html">My Profile</a>
+    </nav>
+</header>
+
+<main class="page">
+
+    <div class="page-title">
+        <span class="kicker">YOUR SPACE</span>
+
+        <h1>Your skill <span>cards.</span></h1>
+
+        <p>Manage skills you've added and the cards you've saved.</p>
+    </div>
+
+    <div class="profile-tabs">
+
+        <section class="profile-section">
+
+            <div class="section-head">
+                <h2>My posted skills</h2>
+
+                <a class="text-link" href="offer.html">+ Add skill</a>
+            </div>
+
+            <div class="skill-grid" id="mySkills"></div>
+
+        </section>
+
+        <section class="profile-section">
+
+            <div class="section-head">
+                <h2>Saved skill cards</h2>
+            </div>
+
+            <div class="skill-grid" id="savedSkills"></div>
+
+        </section>
+
+    </div>
+
+    <button class="button outline" onclick="clearMyPosts()">
+        Clear my posted cards
+    </button>
+
+</main>
+
+<footer>
+    <a class="logo" href="index.html">
+        <span class="logo-mark">↔</span> SkillSwap
+    </a>
+
+    <p>Knowledge is better when shared.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

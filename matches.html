@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSwap | Matches</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <a class="logo" href="index.html">
+        <span class="logo-mark">↔</span> SkillSwap
+    </a>
+
+    <button class="hamburger" onclick="toggleNav()">☰</button>
+
+    <nav id="nav">
+        <a href="index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="offer.html">Offer a Skill</a>
+        <a class="active" href="matches.html">Matches</a>
+        <a href="profile.html">My Profile</a>
+    </nav>
+</header>
+
+<main class="page">
+
+    <div class="page-title">
+        <span class="kicker">THE EXCHANGE FINDER</span>
+
+        <h1>Find a skill <span>match.</span></h1>
+
+        <p>
+            Enter a skill you're looking for.
+            We'll compare it with the community skill board.
+        </p>
+    </div>
+
+    <div class="match-search">
+
+        <label>
+            What do you want to learn?
+
+            <div class="input-row">
+
+                <input
+                    id="matchSearch"
+                    placeholder="e.g. Canva, Python, French"
+                >
+
+                <button class="button main" onclick="findMatches()">
+                    Find matches
+                </button>
+
+            </div>
+        </label>
+
+        <div class="match-hint">
+            Tip: Try Canva, C++, guitar, Excel, photography or public speaking.
+        </div>
+
+    </div>
+
+    <div id="matchResults"></div>
+
+</main>
+
+<footer>
+    <a class="logo" href="index.html">
+        <span class="logo-mark">↔</span> SkillSwap
+    </a>
+
+    <p>Knowledge is better when shared.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

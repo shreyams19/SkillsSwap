@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSwap | Offer a Skill</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <a class="logo" href="index.html">
+        <span class="logo-mark">↔</span> SkillSwap
+    </a>
+
+    <button class="hamburger" onclick="toggleNav()">☰</button>
+
+    <nav id="nav">
+        <a href="index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a class="active" href="offer.html">Offer a Skill</a>
+        <a href="matches.html">Matches</a>
+        <a href="profile.html">My Profile</a>
+    </nav>
+</header>
+
+<main class="page">
+
+    <div class="page-title">
+        <span class="kicker">ADD TO THE COMMUNITY</span>
+
+        <h1>Put your knowledge <span>out there.</span></h1>
+
+        <p>
+            Something you're good at could be exactly what
+            someone else needs.
+        </p>
+    </div>
+
+    <div class="offer-wrap">
+
+        <form id="offerForm" class="form-card">
+
+            <h2>Create your skill card</h2>
+
+            <p class="muted">Fields marked * are required.</p>
+
+            <label>
+                Your name *
+                <input id="personName" required placeholder="What should people call you?">
+            </label>
+
+            <label>
+                Skill you can teach *
+                <input id="teachSkill" required placeholder="e.g. Basic Python">
+            </label>
+
+            <label>
+                Category *
+
+                <select id="teachCategory" required>
+                    <option value="">Choose a category</option>
+                    <option>Technology</option>
+                    <option>Creative</option>
+                    <option>Academic</option>
+                    <option>Language</option>
+                    <option>Life Skills</option>
+                    <option>Other</option>
+                </select>
+            </label>
+
+            <label>
+                Skill you want to learn *
+                <input id="wantSkill" required placeholder="e.g. Public speaking">
+            </label>
+
+            <label>
+                About you
+
+                <textarea
+                    id="aboutPerson"
+                    rows="3"
+                    placeholder="Share your experience or how you'd like to exchange"
+                ></textarea>
+            </label>
+
+            <label>
+                Contact (optional)
+                <input id="personContact" placeholder="Email or social handle">
+            </label>
+
+            <button class="button main full" type="submit">
+                Publish my skill card
+            </button>
+
+            <p id="offerMessage" class="message"></p>
+
+        </form>
+
+        <aside class="offer-aside">
+
+            <div class="tip">
+                <span class="tip-icon">💡</span>
+
+                <h3>Keep it beginner-friendly</h3>
+
+                <p>
+                    You don't need to be a professional.
+                    Share something you can explain or help
+                    someone practice.
+                </p>
+            </div>
+
+            <div class="tip lavender">
+                <span class="tip-icon">🔄</span>
+
+                <h3>Make your exchange clear</h3>
+
+                <p>
+                    Think about what you'd like to learn too.
+                    The best swaps are helpful for both people.
+                </p>
+            </div>
+
+        </aside>
+
+    </div>
+
+</main>
+
+<footer>
+    <a class="logo" href="index.html">
+        <span class="logo-mark">↔</span> SkillSwap
+    </a>
+
+    <p>Knowledge is better when shared.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

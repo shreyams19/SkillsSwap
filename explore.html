@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSwap | Explore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <a class="logo" href="index.html">
+        <span class="logo-mark">↔</span> SkillSwap
+    </a>
+
+    <button class="hamburger" onclick="toggleNav()">☰</button>
+
+    <nav id="nav">
+        <a href="index.html">Home</a>
+        <a class="active" href="explore.html">Explore</a>
+        <a href="offer.html">Offer a Skill</a>
+        <a href="matches.html">Matches</a>
+        <a href="profile.html">My Profile</a>
+    </nav>
+</header>
+
+<main class="page">
+
+    <div class="page-title">
+        <span class="kicker">THE SKILL BOARD</span>
+
+        <h1>Explore what people <span>know.</span></h1>
+
+        <p>Maybe the person who can teach you is just one search away.</p>
+    </div>
+
+    <div class="filters">
+
+        <input
+            id="skillSearch"
+            type="search"
+            placeholder="Search skills or people..."
+            oninput="renderExplore()"
+        >
+
+        <select id="skillCategory" onchange="renderExplore()">
+            <option value="all">All categories</option>
+            <option>Technology</option>
+            <option>Creative</option>
+            <option>Academic</option>
+            <option>Language</option>
+            <option>Life Skills</option>
+            <option>Other</option>
+        </select>
+
+    </div>
+
+    <div class="skill-grid" id="exploreSkills"></div>
+
+    <div id="exploreEmpty" class="empty" hidden>
+        No skills found. Try a different search or add a skill!
+    </div>
+
+</main>
+
+<footer>
+    <a class="logo" href="index.html">
+        <span class="logo-mark">↔</span> SkillSwap
+    </a>
+
+    <p>Knowledge is better when shared.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
